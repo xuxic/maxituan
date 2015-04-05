@@ -1,24 +1,3 @@
-/*****************ga track***********************/
-var code = 'UA-52262182-1';
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', code]);
-_gaq.push(['_trackPageview']);
-function ggTrack(pStr) {
-	//alert(pStr)
-    var pageTracker = _gat._getTracker(code);
-    pageTracker._trackPageview("/" + pStr);
-}
-(function() {
-    var ga = document.createElement('script'); 
-	ga.type = 'text/javascript'; 
-	ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; 
-	s.parentNode.insertBefore(ga, s);
-})();
-/*****************end of Google analysis track***********************/
-
-
 
 //animate
 window.onload = function(){
@@ -47,7 +26,22 @@ window.onload = function(){
 		$("#audiobtn").show();
 		$("#sourcesrc").attr("src","audio/01.mp3");
 	});
-	
+	/*
+	$(".t8_01").click(function(){
+		alert(1);
+	});
+	$(".t8_02").click(function(){
+		alert(1);
+	});*/
+	$(".t8_03").click(function(){
+		window.location.href='signup.html';
+	});/*
+	$(".t8_04").click(function(){
+		alert(1);
+	});
+	$(".t7_04").click(function(){
+		alert(1);
+	});*/
 };
 
 function turn360(){
@@ -138,7 +132,7 @@ function animateT3(){
 	$(".tablist li").eq(2).addClass("on");
 	
 	$(".t3_01").animate({top:-640,opacity:'hide'},0);
-	$(".t3_01").animate({top:0,opacity:'show'},1500);
+	$(".t3_01").animate({top:-50,opacity:'show'},1500);
 	
 	$(".t3_02").animate({left:-300,opacity:'hide'},0);
 	
@@ -182,7 +176,7 @@ function animateT5(){
 	$(".tablist li").eq(4).addClass("on");
 	
 	$(".t5_01").animate({top:-640,opacity:'hide'},0);
-	$(".t5_01").animate({top:0,opacity:'show'},1500);
+	$(".t5_01").animate({top:-50,opacity:'show'},1500);
 	
 	$(".t5_02").animate({left:300,opacity:'hide'},0);
 	
@@ -230,7 +224,7 @@ function animateT7(){
 	$(".t7_01").animate({top:-640,opacity:'hide'},0);
 	$(".t7_01").animate({top:0,opacity:'show'},1500);
 	
-	$(".t7_04").animate({right:-300,opacity:'hide'},0);
+	
 	
 	$(".t7_03").hide();
 	$(".t7_03").fadeIn(1200);
@@ -241,7 +235,7 @@ function animateT7(){
 	$(".t7_05").animate({bottom:-640,opacity:'hide'},0);
 	$(".t7_05").animate({bottom:0,opacity:'show'},1500);
 	
-	setTimeout(function(){$(".t7_04").animate({right:0,opacity:'show'},2000)},1000);	
+		
 }
 
 function animateT8(){
@@ -257,10 +251,11 @@ function animateT8(){
 	
 	$(".t8_03").hide();
 	$(".t8_03").fadeIn(1600)
-	
+	$(".t7_04").animate({right:-300,opacity:'hide'},0);
 	$(".t8_04").hide();
 	$(".t8_04").fadeIn(1600)
 	
+	setTimeout(function(){$(".t7_04").animate({right:0,opacity:'show'},2000)},1000);
 	setTimeout(function(){$(".t8_02").animate({top:0,opacity:'show'},1200)},1000);	
 }
 
@@ -269,7 +264,6 @@ function animateT9(){
 	$(".tablist").show();
 	$(".tablist li").removeClass("on");
 	$(".tablist li").eq(8).addClass("on");
-	$(".arrows").hide();
 	
 	$(".t9_01").animate({top:-640,opacity:'hide'},0);
 	$(".t9_01").animate({top:0,opacity:'show'},1000);
