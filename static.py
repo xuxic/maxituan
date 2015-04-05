@@ -14,6 +14,7 @@ class signup:
         output = open('output','a')
         output.write(i.name+','+i.phone+'\n')
         output.close()
+        return {}
 
 if __name__ == "__main__":
     app.run()

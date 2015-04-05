@@ -32,16 +32,25 @@ window.onload = function(){
 	});
 	$(".t8_02").click(function(){
 		alert(1);
-	});*/
+	});
 	$(".t8_03").click(function(){
 		window.location.href='signup.html';
-	});/*
+	});
 	$(".t8_04").click(function(){
 		alert(1);
-	});
-	$(".t7_04").click(function(){
-		alert(1);
 	});*/
+	$(".t7_04").click(function(){
+		console.log("send msg");
+		var msg = {"name":$("#name").val(),"phone":$("#tel").val()};
+		console.log(msg);
+		url = "/signup?name="+$("#name").val()+"&"+$("#tel").val()
+		$.post(url,msg,
+		function(data,status){
+			//alert(status);
+			alert("恭喜您！抢票成功");
+			//animateT9();
+		}, "json");
+	});
 };
 
 function turn360(){

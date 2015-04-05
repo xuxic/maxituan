@@ -10,7 +10,6 @@
 </head>
 <body>
 	<div class="container">
-		
 		   <div class="form-group">
 		      <label for="name">姓名</label>
 		      <input name="name" type="text" class="form-control" id="name" 
@@ -21,10 +20,23 @@
 		      <input name="phone" type="text" class="form-control" id="phone" 
 		         placeholder="请输入电话号码">
 		   </div>
-		   <button id="send" class="btn btn-default">提交</button>
-
+		   <button id="sendmsg" class="btn btn-default">提交</button>
+		   <p id="msg" class="text-success"></p>
 	</div>
 </body>
    <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+   <script type="text/javascript">
+	$("#sendmsg").click(function(){
+		console.log("send msg");
+		var msg = {"name":$("#name").val(),"phone":$("#phone").val()};
+		console.log(msg);
+		url = "/signup?name="+$("#name").val()+"&"+$("#phone").val()
+		$.post(url,msg,
+		function(data,status){
+			//alert(status);
+			$("#msg").text("恭喜您！报名成功");
+		}, "json");
+	});
+   </script>
 </html>
