@@ -1,0 +1,7 @@
+*.mp3
+*.pyc
+*.png
+*.jpg
+*.gif
+.vagrant
+output
