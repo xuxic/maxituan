@@ -1,0 +1,134 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+body,button,input,select,textarea{font:12px/1.5 Arial,Helvetica,sans-serif;}
+
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+address,cite,dfn,em,var{font-style:normal;}
+code,kbd,pre,samp{font-family:courier new,courier,monospace;}
+ul,ol{list-style:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+a{blr:expression(this.onFocus=this.blur());/*IE Opera*/outline:none;/*FF Opera*/}
+a:focus{-moz-outline-style:none;/*FF*/}
+fieldset,img{border:0;}
+img{vertical-align:top;/*display:block;*/}
+button,input,select,textarea{font-size:100%;outline: none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix:after {visibility: hidden;display:block;font-size:0;content:"";clear:both;height: 0;}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+.number li{list-style-type:decimal;}
+.texe_hidde{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+
+/*generic*/
+.fl{float:left}
+.fr{float:right}
+.center{text-align:center;}
+.hide{display:none;}
+.invisible{visibility:hidden;}
+
+#content{width:100%; overflow:hidden; margin:0 auto; position:relative; height:100%;}
+/*.logo{background:url(../images/logo.html) 0 0 no-repeat; width:108px; height:86px; overflow:hidden; text-indent:-99999px; position:absolute;left:30px;top:0;}*/
+
+.tablist{background:url(../images/tabs_bg.png) 0 0px no-repeat; width:18px; height:150px; padding:25px 0 0 4px; overflow:hidden; position:absolute;top:315px;left:0; display:none;}
+.tablist li{background:url(../images/tab_on.png) 0 -21px no-repeat; width:12px; height:6px; overflow:hidden; display:block; text-indent:-99999px; margin:0 0 10px 0;}
+.tablist li.on{background-position:0 0; height:12px;}
+
+
+.wipecontbox,.wipecont,.wipeone{width:100%;overflow:hidden;position:relative; margin:0 auto; padding:0px;}
+
+
+.t1_01,.t1_02,.t1_03,.t1_04,.t1_05,
+.t2_01,.t2_02,.t2_03,.t2_04,.t2_05,.t2_06,.t2_07,
+.t3_01,.t3_02,.t3_03,.t3_04,
+.t4_01,.t4_02,.t4_03,.t4_04,.t4_05,
+.t5_01,.t5_02,.t5_03,.t5_04,.t5_05,
+.t6_01,.t6_02,.t6_03,.t6_04,.t6_05,
+.t7_01,.t7_02,.t7_03,.t7_04,.t7_05,
+.t8_01,.t8_02,.t8_03,.t8_04,
+.t9_01,.t9_02,.t9_03
+
+{position:absolute;display:style;}
+
+.t1_01{left:0;top:0px;}
+.t1_02{left:0;bottom:0px;}
+.t1_03{left:0;top:0px;}
+.t1_04{left:0;top:0px;}
+.t1_05{left:0;top:0px;}
+
+.t2_01{left:0px;top:0px;}
+.t2_02{left:0;top:0px;}
+.t2_03{left:0;top:0px;}
+.t2_04{left:0px;top:0px;}
+.t2_05{left:0;top:0px;}
+.t2_06{left:0;bottom:0px;}
+.t2_07{left:0;bottom:0px;}
+
+.t3_01{left:0px;top:0px;}
+.t3_02{left:0;top:0px;}
+.t3_03{left:0;top:0px;}
+.t3_04{left:0px;bottom:0px;}
+
+.t4_01{left:0px;top:-80px;}
+.t4_02{left:0;top:-80px;}
+.t4_03{left:0;top:-80px;}
+.t4_04{left:0px;top:-80px;}
+.t4_05{left:0;bottom:0px;}
+
+.t5_01{left:0px;top:0px;}
+.t5_02{left:0;top:0px;}
+.t5_03{left:0;top:0px;}
+.t5_04{left:0px;top:0px;}
+.t5_05{left:0;bottom:0px;}
+
+.t6_01{left:0px;top:0px;}
+.t6_02{left:0;top:0px;}
+.t6_03{left:0;top:0px;}
+.t6_04{left:0px;top:0px;}
+.t6_05{left:0;bottom:0px;}
+
+.t7_01{left:0px;top:0px;}
+.t7_02{left:0;top:0px;}
+.t7_03{left:0;top:0px;}
+.t7_04{left:0px;top:0px;}
+.t7_05{left:0;bottom:0px;}
+
+.t8_01{left:0px;top:0px;}
+.t8_02{left:0;top:0px;}
+.t8_03{left:0;top:0px;}
+.t8_04{left:0px;top:0px;}
+
+.t9_01{left:0px;top:0px;}
+.t9_02{left:0;top:800px;}
+.t9_03{position:absolute;left:0;top:800px;}
+
+#audiobtn,#audiobtn2{position:absolute;right:0px;top:0px;}
+#audiobtn2{display:none;}
+#sourcesrc{display:none;}
+
+#loading{ position:fixed; left:0; top:50%; width:100%; height:100px; margin-top:-50px; font-size:20px; text-align:center; color:#fff;}
+#loading img{ display:inline-block;}
+.black{background:#000;}
+
+.arrows{position:absolute;left:300px; bottom:20px;}
+
+.flash{
+-webkit-animation:pulse 1s .2s ease both;
+-moz-animation:pulse 1s .2s ease both;
+animation-iteration-count:infinite;
+-webkit-animation-iteration-count:infinite;
+-moz-animation-iteration-count:infinite;}
+@-webkit-keyframes pulse{
+0%{-webkit-transform:scale(1,1)}
+50%{-webkit-transform:scale(1.2,1.2)}
+100%{-webkit-transform:scale(1,1)}
+}
+@-moz-keyframes pulse{
+0%{-moz-transform:scale(1,1)}
+50%{-moz-transform:scale(1.2,1.2)}
+100%{-moz-transform:scale(1,1)}
+}
