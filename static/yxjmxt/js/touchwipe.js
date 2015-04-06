@@ -37,7 +37,7 @@ $(function(){
 	  min_move_x: 30, 
 	  min_move_y: 30, 
 	  wipeUp: function() {
-		  if(offsetTop > -winHeight*8){
+		  if(offsetTop > -winHeight*7){
 			  offsetTop -= winHeight;
 			  $(".wipecont").css("top",offsetTop + "px");
 		  };
@@ -74,11 +74,6 @@ $(function(){
 			  animateT8();
 			
 		  }; 
-		  if(offsetTop == -winHeight*8){
-			  animateT9();
-			
-		  };
-		  
 		},
 	  wipeDown: function() {
 		  if(offsetTop < 0){
@@ -121,11 +116,6 @@ $(function(){
 			  animateT8();
 			
 		  }; 
-		  if(offsetTop == -winHeight*8){
-			  animateT9();
-			
-		  };
-
 	   } 
 	    
     });
