@@ -41,6 +41,10 @@ window.onload = function(){
 	});*/
 	$(".t7_04").click(function(){
 		console.log("send msg");
+		if($("#name").val()=="" || $("#tel").val()=="" ){
+			alert("请完整填写姓名和电话后再点击抢票");
+			return;
+		} 
 		var msg = {"name":$("#name").val(),"phone":$("#tel").val()};
 		console.log(msg);
 		url = "/signup?name="+$("#name").val()+"&"+$("#tel").val()
