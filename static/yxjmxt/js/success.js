@@ -38,7 +38,7 @@ window.onload = function(){
 	});
 	$(".t8_04").click(function(){
 		alert(1);
-	});*/
+	});
 	$(".t7_04").click(function(){
 		console.log("send msg");
 		var msg = {"name":$("#name").val(),"phone":$("#tel").val()};
@@ -47,13 +47,13 @@ window.onload = function(){
 		$.post(url,msg,
 		function(data,status){
 			//alert(status);
-			window.location.href='success.html';
+			alert("恭喜您！抢票成功");
+			//animateT9();
 		}, "json");
-	});
-	/*
+	});*/
 	$(".t7_04").click(function(){
 		window.location.href='signup.html';
-	});*/
+	});
 };
 
 function turn360(){
@@ -101,19 +101,13 @@ function animateT1(){
 	$(".imgtxt2").hide();
 	$(".tablist").show();
 	$(".tablist li").removeClass("on");
-	$(".tablist li").eq(0).addClass("on");
+	$(".tablist li").eq(8).addClass("on");
 	
-	$(".t1_01").hide();
-	$(".t1_02").hide();
-	$(".t1_03").hide();
-	$(".t1_04").hide();
-	$(".t1_05").hide();
-	$(".t1_01").fadeIn();
-	$(".t1_02").fadeIn();
-	$(".t1_03").fadeIn();
-	$(".t1_04").fadeIn();
-	$(".t1_05").fadeIn();
-
+	$(".t9_01").animate({top:-640,opacity:'hide'},0);
+	$(".t9_01").animate({top:-80,opacity:'show'},1000);
+	
+	$(".t9_02").animate({top:220,opacity:'hide'},0);
+	setTimeout(function(){$(".t9_02").animate({top:-80,opacity:'show'},1200)},1000);	
 }
 function animateT2(){
 	$(".imgtxt2").hide();
