@@ -38,7 +38,7 @@ window.onload = function(){
 	});
 	$(".t8_04").click(function(){
 		alert(1);
-	});*/
+	});
 	$(".t7_04").click(function(){
 		console.log("send msg");
 		var msg = {"name":$("#name").val(),"phone":$("#tel").val()};
@@ -50,6 +50,9 @@ window.onload = function(){
 			alert("恭喜您！抢票成功");
 			//animateT9();
 		}, "json");
+	});*/
+	$(".t7_04").click(function(){
+		window.location.href='signup.html';
 	});
 };
 
@@ -141,7 +144,7 @@ function animateT3(){
 	$(".tablist li").eq(2).addClass("on");
 	
 	$(".t3_01").animate({top:-640,opacity:'hide'},0);
-	$(".t3_01").animate({top:-50,opacity:'show'},1500);
+	$(".t3_01").animate({top:-100,opacity:'show'},1500);
 	
 	$(".t3_02").animate({left:-300,opacity:'hide'},0);
 	
@@ -185,7 +188,7 @@ function animateT5(){
 	$(".tablist li").eq(4).addClass("on");
 	
 	$(".t5_01").animate({top:-640,opacity:'hide'},0);
-	$(".t5_01").animate({top:-50,opacity:'show'},1500);
+	$(".t5_01").animate({top:-80,opacity:'show'},1500);
 	
 	$(".t5_02").animate({left:300,opacity:'hide'},0);
 	
@@ -231,7 +234,7 @@ function animateT7(){
 	$(".tablist li").eq(6).addClass("on");
 	
 	$(".t7_01").animate({top:-640,opacity:'hide'},0);
-	$(".t7_01").animate({top:0,opacity:'show'},1500);
+	$(".t7_01").animate({top:-60,opacity:'show'},1500);
 	
 	
 	
@@ -254,7 +257,7 @@ function animateT8(){
 	$(".tablist li").eq(7).addClass("on");
 	
 	$(".t8_01").animate({top:-640,opacity:'hide'},0);
-	$(".t8_01").animate({top:0,opacity:'show'},1000);
+	$(".t8_01").animate({top:-80,opacity:'show'},1000);
 	
 	$(".t8_02").animate({top:220,opacity:'hide'},0);	
 	
@@ -275,9 +278,9 @@ function animateT9(){
 	$(".tablist li").eq(8).addClass("on");
 	
 	$(".t9_01").animate({top:-640,opacity:'hide'},0);
-	$(".t9_01").animate({top:0,opacity:'show'},1000);
+	$(".t9_01").animate({top:-80,opacity:'show'},1000);
 	
 	$(".t9_02").animate({top:220,opacity:'hide'},0);
-	setTimeout(function(){$(".t9_02").animate({top:0,opacity:'show'},1200)},1000);	
+	setTimeout(function(){$(".t9_02").animate({top:-80,opacity:'show'},1200)},1000);	
 }
 
