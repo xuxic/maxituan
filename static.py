@@ -1,5 +1,12 @@
-import web
+#!/usr/bin/python
+# coding: utf-8
 
+import sys,os
+reload(sys)
+sys.setdefaultencoding('utf8')
+
+import web
+    
 urls = ("/signup", "signup")
 app = web.application(urls, globals())
 
@@ -9,8 +16,9 @@ class signup:
     
     def POST(self):
         i = web.input()
-        print i.name
-        print i.phone
+        print i
+        print i.name.encode('utf8')
+        print i.phone.encode('utf8')
         output = open('output','a')
         output.write(i.name+','+i.phone+'\n')
         output.close()
