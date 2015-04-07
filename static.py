@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # coding: utf-8
 
-import sys,os
+import sys,os,fcntl
 reload(sys)
 sys.setdefaultencoding('utf8')
 
@@ -20,7 +20,10 @@ class signup:
         print i.name.encode('utf8')
         print i.phone.encode('utf8')
         output = open('output','a')
+        fcntl.flock(output, fcntl.LOCK_EX)
         output.write(i.name+','+i.phone+'\n')
+        output.flush()
+        fcntl.flock(output, fcntl.LOCK_UN)
         output.close()
         return {}
 
