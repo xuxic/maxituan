@@ -72,7 +72,9 @@ $(function(){
 		  }; 
 		  if(offsetTop == -winHeight*7){
 			  animateT8();
-			
+		  }; 
+		  if(offsetTop == -winHeight*8){
+			  animateT9();
 		  }; 
 		},
 	  wipeDown: function() {
@@ -114,6 +116,10 @@ $(function(){
 		  }; 
 		  if(offsetTop == -winHeight*7){
 			  animateT8();
+			
+		  }; 
+		  if(offsetTop == -winHeight*8){
+			  animateT9();
 			
 		  }; 
 	   } 

@@ -49,7 +49,7 @@ sub{vertical-align:text-bottom;}
 .t5_01,.t5_02,.t5_03,.t5_04,.t5_05,
 .t6_01,.t6_02,.t6_03,.t6_04,.t6_05,
 .t7_01,.t7_02,.t7_03,.t7_04,.t7_05,
-.t8_01,.t8_02,.t8_03,.t8_04,.name_txt,.tel_txt,
+.t8_01,.t8_02,.t8_03,.t8_04,.name_txt,.tel_txt,.t8_05,
 .t9_01,.t9_02,.t9_03
 
 {position:absolute;display:style}
@@ -99,6 +99,7 @@ sub{vertical-align:text-bottom;}
 
 .t8_01{left:0px;top:0px;}
 .t8_02{left:0;top:0px;}
+.t8_05{left:0;top:0px;}
 .t8_03{left:0;top:0px;}
 .t8_04{left:0px;top:0px;}
 .name_txt{left:260px;top:605px;}

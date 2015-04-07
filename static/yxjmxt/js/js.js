@@ -38,7 +38,7 @@ window.onload = function(){
 	});
 	$(".t8_04").click(function(){
 		alert(1);
-	});*/
+	});
 	$(".t7_04").click(function(){
 		console.log("send msg");
 		if($("#name").val()=="" || $("#tel").val()=="" ){
@@ -54,7 +54,7 @@ window.onload = function(){
 			window.location.href='success.html';
 		}, "json");
 	});
-	/*
+	
 	$(".t7_04").click(function(){
 		window.location.href='signup.html';
 	});*/
@@ -264,6 +264,7 @@ function animateT8(){
 	$(".t8_01").animate({top:-80,opacity:'show'},1000);
 	
 	$(".t8_02").animate({top:220,opacity:'hide'},0);	
+	$(".t8_05").animate({top:100,opacity:'hide'},0);
 	
 	$(".t8_03").hide();
 	$(".t8_03").fadeIn(1600)
@@ -272,7 +273,11 @@ function animateT8(){
 	$(".t8_04").fadeIn(1600)
 	
 	setTimeout(function(){$(".t7_04").animate({right:0,opacity:'show'},2000)},1000);
-	setTimeout(function(){$(".t8_02").animate({top:0,opacity:'show'},1200)},1000);	
+	setTimeout(function(){$(".t8_02").animate({top:-50,opacity:'show'},1200)},1000);	
+	setTimeout(function(){$(".t8_05").animate({top:-200,opacity:'show'},1200)},1000);	
+
+	$(".t9_02").animate({top:300,opacity:'hide'},0);
+	setTimeout(function(){$(".t9_02").animate({top:170,opacity:'show'},1200)},1000);	
 }
 
 function animateT9(){
