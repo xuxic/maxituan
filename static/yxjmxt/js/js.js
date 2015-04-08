@@ -3,7 +3,7 @@
 window.onload = function(){
 	pagaInit();
 	animateT1();
-	$("#sourcesrc").attr("src","audio/01.mp3");
+	$("#sourcesrc").attr("src","http://7u2k64.com1.z0.glb.clouddn.com/yxjmxt01.mp3");
 	
 	$(".imgtxt2").hide();
 	$(".itxt").click(function(){
@@ -24,7 +24,7 @@ window.onload = function(){
 	$("#audiobtn2").click(function(){
 		$(this).hide();
 		$("#audiobtn").show();
-		$("#sourcesrc").attr("src","audio/01.mp3");
+		$("#sourcesrc").attr("src","http://7u2k64.com1.z0.glb.clouddn.com/yxjmxt01.mp3");
 	});
 	/*
 	$(".t8_01").click(function(){
