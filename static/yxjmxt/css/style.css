@@ -107,7 +107,7 @@ sub{vertical-align:text-bottom;}
 
 .t9_01{left:0px;top:0px;}
 .t9_02{left:0;top:800px;}
-.t9_03{position:absolute;left:0;top:800px;}
+.t9_03{position:absolute;left:20%;top:800px;width:60%}
 
 #audiobtn,#audiobtn2{position:absolute;right:0px;top:0px;}
 #audiobtn2{display:none;}
