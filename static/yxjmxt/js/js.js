@@ -279,7 +279,7 @@ function animateT8(){
 	$(".t9_02").animate({top:300,opacity:'hide'},0);
 	setTimeout(function(){$(".t9_02").animate({top:170,opacity:'show'},1200)},1000);	
 	$(".t9_03").animate({top:950,opacity:'hide'},0);
-	setTimeout(function(){$(".t9_03").animate({top:900,opacity:'show'},1200)},1000);
+	setTimeout(function(){$(".t9_03").animate({top:700,opacity:'show'},1200)},1000);
 }
 
 function animateT9(){
