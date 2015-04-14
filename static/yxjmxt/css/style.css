@@ -99,10 +99,10 @@ sub{vertical-align:text-bottom;}
 
 .t8_01{left:0px;top:0px;}
 .t8_02{left:0;top:0px;}
-.t8_03{left:0;top:0px;}
+.t8_03{left:-100px;top:-120px;width:850px;height:1200px}
 .t8_04{left:0px;top:0px;}
-.name_txt{left:260px;top:605px;}
-.tel_txt{left:260px;top:645px;}
+.name_txt{left:260px;top:600px;width:220px; height:40px;font-size:30px;z-index:100}
+.tel_txt{left:260px;top:650px;width:220px; height:40px;font-size:30px;z-index:100}
 
 .t9_01{left:0px;top:0px;}
 .t9_02{left:0;top:800px;}
